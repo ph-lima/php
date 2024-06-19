@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form id="formCadastro" name="formCadastro" method="POST" action="recebeForm.php">
+
+        <h2>Qual seu sistema operacional?</h2>
+        <input type="radio" name="sistema" value="Windows 8.1"> Windows 8.1<br>
+        <input type="radio" name="sistema" value="Windows 10"> Windows 10<br>
+        <input type="radio" name="sistema" value="Linux"> Linux<br>
+        <input type="radio" name="sistema" value="Mac"> Mac<br><br>
+
+        <h2>Escolha os números de sua preferência:</h2>
+        <input type="checkbox" name="numeros[]" value="10"> 10<br>
+        <input type="checkbox" name="numeros[]" value="100"> 100<br>
+        <input type="checkbox" name="numeros[]" value="1000"> 1.000<br><br>
+
+        <h2>Qual seu processador?</h2>
+        <select name="processador">
+            <option value="Pentium">Pentium</option>
+            <option value="AMD">AMD</option>
+            <option value="Celeron">Celeron</option>
+        </select><br><br>
+
+        <input id="botaoEnviar" type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
